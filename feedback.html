@@ -1,0 +1,166 @@
+<html>
+	<head>
+		<style>
+		
+			a:link{color:#0000CC}
+			a:active{color:#66FF00}
+			a:visited{color:violet}
+			a:hover{color:DarkRed}
+			
+		body{
+			background-image:url("6.gif");
+		}
+		</style>
+		<script type="text/javascript">
+		function validate()
+			{
+				var check=true;
+				var filter=/^([\w\.\-])+\@+([\w])+\.+([a-zA-Z]{2,4})$/;
+				
+				if(document.frm.email.value=="")
+				{
+					alert("Please enter your email address");
+					check=false;
+					document.frm.email.focus();
+				}
+				else if(!filter.test(document.frm.email.value))
+				{
+					alert("Enter valid email id");
+					check=false;
+					document.frm.email.focus();
+				}
+			}
+		</script>	
+	</head>
+	<body>
+	<div style='background-color:gold;overflow:marquee-play-count;'>
+	
+	<table border="1" align="center">
+		<tr>
+			<td colspan=2 width=150 height=150>
+				<img src="RAMP1.jpg" width="150" height="100">
+			</td>
+			<td align="center" width=185 color="red"><font color="Blue" face="tekton pro" size="5"><ins><abbr title="You Regenerate">R:Regenerate</abbr><br><abbr title="We Analyse">A:Analyse</abbr><br><abbr title="Manipulate Yourself">M:Manipulate & </abbr><br><abbr title="Presented By Us">P:Present</abbr><ins></font></td>
+		</tr>
+	</table>
+	
+	</div>
+	<div style='background-color:#FFFF66;width:100%;height:35px'>
+	<table align="center">
+	<tr>
+		<td colspan=2 width="20%"><a href="3.html"><img src="home.jpg" height="30" width="30"></a></td>
+		<td colspan=2 width="20%"><a href="#">Feed-Back</a></td>
+		<td colspan=2 width="20%"><a href="contus.html">Contact-Us</a></td>
+		<td colspan=2 width="20%"><a href="epro.php">Edit-UR-Profile</a></td>
+		<td colspan=2 width="20%" align="right"><a href="logout.php"><img src="logout.png" height="30" width="30"></a></td>
+		
+	</tr>
+	</table>
+	</div>
+	
+	<div style='background-color:#FFFF99;float:left;width:110px;overflow:hidden;height:100%'>
+	<ul>
+		<li><a href="4.html">Business</a></li><hr>
+		<li><a href="5.html">Biography</a></li><hr>
+		<li><a href="6.html">Recipe</a></li><hr>
+		
+	</ul>
+	</div>
+	<h1>Feed-Back</h1>
+	
+		<div style="background-color:#0000FF">
+			<h2><font color="white">Your Shopping Expirience:</font></h2>
+		</div>
+		<table>
+		<form name="frm" action="mail.php" method="GET" onSubmit="return validate();">
+		<tr>
+			<td>
+				
+			</td>
+			<th>
+				Terrible
+			</th>
+			<th>
+				Bad
+			</th>
+			<th>
+				Good
+			</th>
+			<th>
+				Great
+			</th>
+		</tr>
+		<tr>
+			<th align="left">
+				Look and usability of pages:
+			</th>
+			<td>
+				<input type="radio" name="fb1">
+			</td>
+			<td>
+				<input type="radio" name="fb1">
+			</td>
+			<td>
+				<input type="radio" name="fb1">
+			</td>
+			<td>
+				<input type="radio" name="fb1">
+			</td>
+		</tr>
+		<tr>
+			<th align="left">
+				visibility of pages:
+			</th>
+			<td>
+				<input type="radio" name="fb2">
+			</td>
+			<td>
+				<input type="radio" name="fb2">
+			</td>
+			<td>
+				<input type="radio" name="fb2">
+			</td>
+			<td>
+				<input type="radio" name="fb2">
+			</td>
+		</tr>
+		<tr>
+			<th align="left">
+				speed of download:
+			</th>
+			<td>
+				<input type="radio" name="fb3">
+			</td>
+			<td>
+				<input type="radio" name="fb3">
+			</td>
+			<td>
+				<input type="radio" name="fb3">
+			</td>
+			<td>
+				<input type="radio" name="fb3">
+			</td>
+		</tr>
+		
+		</table>
+		<table>
+		<hr color="blue">
+		<tr>
+			<td align="left">Complain Request or message:</td>
+			<td><textarea name="email"></textarea></td>
+		</tr>
+		<tr>
+			<td align="left">Enter Your Email Id:</td>
+			<td><input type="text" name="email"></td>
+		</tr>
+		</table>
+		<hr color="blue">
+		<table>
+		
+		<tr>
+			<td align="center" width=800><input type="submit" value="SUBMIT"></td>
+		</tr>
+		</table>
+	
+	</body>
+</html>
